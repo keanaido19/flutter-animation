@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:funky_app/views/jump.dart';
 import 'package:funky_app/views/spin.dart';
 import 'package:funky_app/views/zoom.dart';
 import 'dart:math';
@@ -65,7 +66,7 @@ class _FunkyHomeViewState extends State<FunkyHomeView> {
     Navigator.of(context).push(
         MaterialPageRoute<void>(
             builder: (BuildContext context) {
-              return const ZoomView();
+              return const JumpView();
             }
         )
     );
