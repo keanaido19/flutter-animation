@@ -16,7 +16,7 @@ class FunkyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const FunkyHomeView(title: 'Make me Nice'),
+      home: const FunkyHomeView(title: 'Home'),
     );
   }
 }
