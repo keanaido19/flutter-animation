@@ -9,8 +9,8 @@ class ZoomView extends StatefulWidget {
 
 class _ZoomViewState extends State<ZoomView> {
   bool _isZoomed = false;
-  double _width = 100.0;
-  double _height = 100.0;
+  double _width = 120.0;
+  double _height = 120.0;
 
   @override
   Widget build(BuildContext context) {
@@ -22,9 +22,7 @@ class _ZoomViewState extends State<ZoomView> {
             Navigator.of(context).pop();
           },
         ),
-        title: const Center(
-            child : Text('Make me Move')
-        ),
+        title: const Text('Make me Move'),
       ),
       body: Center(
         child: Column(

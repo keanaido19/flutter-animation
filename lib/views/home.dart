@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:funky_app/views/spin.dart';
 import 'package:funky_app/views/zoom.dart';
 import 'dart:math';
 
@@ -17,9 +18,8 @@ class _FunkyHomeViewState extends State<FunkyHomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-            child: Text(widget.title)
-        ),
+        leading: const Icon(Icons.home),
+        title: Text(widget.title),
       ),
       body: Center(
         child: Column(
@@ -55,7 +55,7 @@ class _FunkyHomeViewState extends State<FunkyHomeView> {
     Navigator.of(context).push(
         MaterialPageRoute<void>(
             builder: (BuildContext context) {
-              return const ZoomView();
+              return const SpinView();
             }
         )
     );
